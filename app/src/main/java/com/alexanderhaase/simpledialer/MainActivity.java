@@ -1,9 +1,12 @@
 package com.alexanderhaase.simpledialer;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+
+    public void dialContact( View view ) {
+        final Intent intent = new Intent( Intent.ACTION_CALL, Uri.parse( "tel:" + "17194223041"));
+        startActivity( intent );
+        finish();
     }
 
     @Override
