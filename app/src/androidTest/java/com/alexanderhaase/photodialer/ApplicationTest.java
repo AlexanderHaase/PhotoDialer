@@ -1,4 +1,4 @@
-package com.alexanderhaase.simpledialer;
+package com.alexanderhaase.photodialer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
